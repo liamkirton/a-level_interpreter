@@ -1,0 +1,41 @@
+func null main[]
+{
+  var num angle = 45
+}
+{
+  print["sin(", angle, ") = ", sine[(3.141592654 * angle / 180)], endl]
+}
+
+func num sine[var num angle]
+{
+  var num t_result = 0
+  var num result = 0
+  var num power = 1
+  var num sign = 2
+}
+{	
+  while (power <= 9)
+  {
+    t_result = ((-1 ^ sign) * ((angle ^ power) / factorial[power]))
+    result = result + t_result
+    power = power + 2
+    sign = sign + 1
+  }
+
+  return result
+}
+
+func num factorial[var num value]
+{
+
+}
+{
+  if (value <= 1)
+  {
+    return value
+  }
+  else
+  {
+    return (value * factorial[(value - 1)])
+  }
+}

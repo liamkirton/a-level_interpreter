@@ -1,0 +1,22 @@
+func null main[]
+{
+  var num value = 5
+}
+{
+  print["factorial[", value, "]= ", factorial[value]]
+}
+
+func num factorial[var num value]
+{
+
+}
+{
+  if (value <= 1)
+  {
+    return value
+  }
+  else
+  {
+    return (value * factorial[(value - 1)])
+  }
+}
